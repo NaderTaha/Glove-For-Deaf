@@ -152,7 +152,7 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x374a
+.text           0x00000000     0x38b2
  *(.vectors)
  .vectors       0x00000000       0x54 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -346,45 +346,45 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
                 0x00001c9a       0x6c ./MCAL/ADC/ACD_prog.o
                 0x00001c9a                void__victor_16
  .text.LCD_enuwritelatch
-                0x00001d06      0x2c2 ./HAL/LCD/LCD_source.o
+                0x00001d06      0x48a ./HAL/LCD/LCD_source.o
                 0x00001d06                LCD_enuwritelatch
  .text.LCD_INIT
-                0x00001fc8      0x470 ./HAL/LCD/LCD_source.o
-                0x00001fc8                LCD_INIT
+                0x00002190      0x470 ./HAL/LCD/LCD_source.o
+                0x00002190                LCD_INIT
  .text.LCD_enusend_cmd
-                0x00002438       0x26 ./HAL/LCD/LCD_source.o
-                0x00002438                LCD_enusend_cmd
+                0x00002600       0x26 ./HAL/LCD/LCD_source.o
+                0x00002600                LCD_enusend_cmd
  .text.LCD_enusend_data
-                0x0000245e       0x26 ./HAL/LCD/LCD_source.o
-                0x0000245e                LCD_enusend_data
+                0x00002626       0x26 ./HAL/LCD/LCD_source.o
+                0x00002626                LCD_enusend_data
  .text.LCD_enusend_string
-                0x00002484       0x46 ./HAL/LCD/LCD_source.o
-                0x00002484                LCD_enusend_string
+                0x0000264c       0x46 ./HAL/LCD/LCD_source.o
+                0x0000264c                LCD_enusend_string
  .text.LCD_enuGoToPosition
-                0x000024ca       0x6c ./HAL/LCD/LCD_source.o
-                0x000024ca                LCD_enuGoToPosition
+                0x00002692       0x6c ./HAL/LCD/LCD_source.o
+                0x00002692                LCD_enuGoToPosition
  .text.LCD_enuSendIntegerNum
-                0x00002536      0x152 ./HAL/LCD/LCD_source.o
-                0x00002536                LCD_enuSendIntegerNum
- .text.main     0x00002688     0x1002 ./Application/main.o
-                0x00002688                main
- .text.libgcc   0x0000368a       0x28 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x0000368a                __udivmodhi4
- .text.libgcc   0x000036b2       0x26 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
-                0x000036b2                __divmodhi4
-                0x000036b2                _div
- .text.libgcc   0x000036d8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000036d8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000036d8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000036d8       0x38 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x000036d8                __prologue_saves__
- .text.libgcc   0x00003710       0x36 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00003710                __epilogue_restores__
-                0x00003746                . = ALIGN (0x2)
+                0x000026fe      0x152 ./HAL/LCD/LCD_source.o
+                0x000026fe                LCD_enuSendIntegerNum
+ .text.main     0x00002850      0xfa2 ./Application/main.o
+                0x00002850                main
+ .text.libgcc   0x000037f2       0x28 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x000037f2                __udivmodhi4
+ .text.libgcc   0x0000381a       0x26 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x0000381a                __divmodhi4
+                0x0000381a                _div
+ .text.libgcc   0x00003840        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00003840        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00003840        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00003840       0x38 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00003840                __prologue_saves__
+ .text.libgcc   0x00003878       0x36 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00003878                __epilogue_restores__
+                0x000038ae                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00003746        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00003746                exit
-                0x00003746                _exit
+ .fini9         0x000038ae        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000038ae                exit
+                0x000038ae                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -403,11 +403,11 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00003746        0x4 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x000038ae        0x4 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000374a                _etext = .
+                0x000038b2                _etext = .
 
-.data           0x00800060      0x17a load address 0x0000374a
+.data           0x00800060      0x17a load address 0x000038b2
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -442,7 +442,7 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
                 0x008001ce                intr
  *(.rodata)
  *(.rodata*)
- .rodata.C.0.1323
+ .rodata.C.0.1352
                 0x008001d1        0x8 ./Application/main.o
  *(.gnu.linkonce.d*)
                 0x008001da                . = ALIGN (0x2)
@@ -486,8 +486,8 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
                 0x008001e0        0x2 ./MCAL/ADC/ACD_prog.o
  *(COMMON)
                 0x008001e2                PROVIDE (__bss_end, .)
-                0x0000374a                __data_load_start = LOADADDR (.data)
-                0x000038c4                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000038b2                __data_load_start = LOADADDR (.data)
+                0x00003a2c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008001e2        0x0
                 0x008001e2                PROVIDE (__noinit_start, .)
@@ -512,7 +512,7 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x30a8
+.stab           0x00000000     0x31e0
  *(.stab)
  .stab          0x00000000      0x264 ./MCAL/GIE/GIE_Prog.o
  .stab          0x00000264      0x1d4 ./MCAL/EXTI/EXTI_config.o
@@ -523,14 +523,14 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
                                 0x618 (size before relaxing)
  .stab          0x00001254      0x5c4 ./MCAL/ADC/ACD_prog.o
                                 0x5d0 (size before relaxing)
- .stab          0x00001818      0xcd8 ./HAL/LCD/LCD_source.o
-                                0xce4 (size before relaxing)
- .stab          0x000024f0      0xbb8 ./Application/main.o
-                                0xd50 (size before relaxing)
+ .stab          0x00001818      0xe40 ./HAL/LCD/LCD_source.o
+                                0xe4c (size before relaxing)
+ .stab          0x00002658      0xb88 ./Application/main.o
+                                0xd20 (size before relaxing)
 
-.stabstr        0x00000000     0x1439
+.stabstr        0x00000000     0x133c
  *(.stabstr)
- .stabstr       0x00000000     0x1439 ./MCAL/GIE/GIE_Prog.o
+ .stabstr       0x00000000     0x133c ./MCAL/GIE/GIE_Prog.o
 
 .stab.excl
  *(.stab.excl)

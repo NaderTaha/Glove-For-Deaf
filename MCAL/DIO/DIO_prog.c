@@ -1,19 +1,8 @@
-/*
- * DIO_prog.c
- *
- *  Created on: May 28, 2022
- *      Author: Ahmed El-Gaafrawy
- */
-//public libraries
+
+
 #include "../../LIBRARY/stdTypes.h"
-//#include "BIT_MATH.h"
 #include "../../LIBRARY/errorState.h"
 
-
-//lower libraries
-
-
-//own libraries
 #include "DIO_priv.h"
 #include "DIO_config.h"
 
@@ -27,7 +16,7 @@ ES_t DIO_enuInit(void)
 #elif DIO_u8PA0DIR == DIO_u8OUTPUT
 	DDRA |= (1<<0);
 #else
-#error "Direction of PA0 is wrong ya latkh"
+#error "Direction of PA0 is wrong"
 #endif
 
 	return Local_enuErrorState;

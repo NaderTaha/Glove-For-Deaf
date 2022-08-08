@@ -11,13 +11,13 @@
 #include "../MCAL/DIO/DIO_int.h"
 
 #include "../MCAL/EXTI/EXTI_config.h"
-#include "../MCAL/EXTI/EXTI_priv.h"
+#include "../MCAL/EXTI/EXTI_inter.h"
 
 #include "../MCAL/ADC/ADC_config.h"
-#include "../MCAL/ADC/ADC_priv.h"
+#include "../MCAL/ADC/ADC_int.h"
 
 #include "../HAL/LCD/LCD_config.h"
-#include "../HAL/LCD/LCD_private.h"
+#include "../HAL/LCD/LCD_int.h"
 
 #include <util/delay.h>
 

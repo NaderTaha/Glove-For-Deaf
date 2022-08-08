@@ -8,8 +8,6 @@
 #include "../../LIBRARY/stdTypes.h"
 #include "../../LIBRARY/errorState.h"
 
-#include "../../MCAL/DIO/DIO_int.h"
-
 #include "ADC_config.h"
 #include "ADC_priv.h"
 

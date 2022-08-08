@@ -8,8 +8,6 @@
 #include "../../LIBRARY/stdTypes.h"
 #include "../../LIBRARY/errorState.h"
 
-#include "../../MCAL/DIO/DIO_int.h"
-
 #include "EXTI_config.h"
 #include "EXTI_priv.h"
 

@@ -9,10 +9,11 @@
 
 #include "../../MCAL/DIO/DIO_int.h"
 
-
-#include <util/delay.h>
 #include "LCD_config.h"
 #include "LCD_private.h"
+
+#include <util/delay.h>
+
 
 ES_t LCD_enuwritelatch(u8 Copy_u8Byte){
 
@@ -26,7 +27,9 @@ if (LCD_MODE == FOUR_BIT){
 		DIO_enuSetPinValue(D4_GRP,D4_PIN,((Copy_u8Byte>>4)&1));
 
 		DIO_enuSetPinValue(EN_GRP,EN_PIN,DIO_u8HIGH);
+		_delay_ms (5);
 		DIO_enuSetPinValue(EN_GRP,EN_PIN,DIO_u8LOW);
+		_delay_ms (5);
 
 		DIO_enuSetPinValue(D7_GRP,D7_PIN,((Copy_u8Byte>>3)&1));
 		DIO_enuSetPinValue(D6_GRP,D6_PIN,((Copy_u8Byte>>2)&1));
