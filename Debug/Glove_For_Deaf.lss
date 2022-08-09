@@ -5,31 +5,31 @@ Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .text         000038b2  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         0000017a  00800060  000038b2  00003946  2**0
+  1 .data         00000188  00800060  000038b2  00003946  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000008  008001da  008001da  00003ac0  2**0
+  2 .bss          00000008  008001e8  008001e8  00003ace  2**0
                   ALLOC
-  3 .stab         000031e0  00000000  00000000  00003ac0  2**2
+  3 .stab         000031e0  00000000  00000000  00003ad0  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      0000133c  00000000  00000000  00006ca0  2**0
+  4 .stabstr      0000133c  00000000  00000000  00006cb0  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_aranges 00000140  00000000  00000000  00007fdc  2**0
+  5 .debug_aranges 00000140  00000000  00000000  00007fec  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_pubnames 00000170  00000000  00000000  0000811c  2**0
+  6 .debug_pubnames 00000170  00000000  00000000  0000812c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_info   00001c49  00000000  00000000  0000828c  2**0
+  7 .debug_info   00001c49  00000000  00000000  0000829c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_abbrev 00000eeb  00000000  00000000  00009ed5  2**0
+  8 .debug_abbrev 00000eeb  00000000  00000000  00009ee5  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   00000dad  00000000  00000000  0000adc0  2**0
+  9 .debug_line   00000dad  00000000  00000000  0000add0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_frame  00000160  00000000  00000000  0000bb70  2**2
+ 10 .debug_frame  00000160  00000000  00000000  0000bb80  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    0000028d  00000000  00000000  0000bcd0  2**0
+ 11 .debug_str    0000028d  00000000  00000000  0000bce0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    000007ce  00000000  00000000  0000bf5d  2**0
+ 12 .debug_loc    000007ce  00000000  00000000  0000bf6d  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_ranges 00000050  00000000  00000000  0000c72b  2**0
+ 13 .debug_ranges 00000050  00000000  00000000  0000c73b  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -78,13 +78,13 @@ Disassembly of section .text:
       6e:	0d 92       	st	X+, r0
 
 00000070 <.do_copy_data_start>:
-      70:	aa 3d       	cpi	r26, 0xDA	; 218
+      70:	a8 3e       	cpi	r26, 0xE8	; 232
       72:	b1 07       	cpc	r27, r17
       74:	d9 f7       	brne	.-10     	; 0x6c <.do_copy_data_loop>
 
 00000076 <__do_clear_bss>:
       76:	11 e0       	ldi	r17, 0x01	; 1
-      78:	aa ed       	ldi	r26, 0xDA	; 218
+      78:	a8 ee       	ldi	r26, 0xE8	; 232
       7a:	b1 e0       	ldi	r27, 0x01	; 1
       7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
 
@@ -92,7 +92,7 @@ Disassembly of section .text:
       7e:	1d 92       	st	X+, r1
 
 00000080 <.do_clear_bss_start>:
-      80:	a2 3e       	cpi	r26, 0xE2	; 226
+      80:	a0 3f       	cpi	r26, 0xF0	; 240
       82:	b1 07       	cpc	r27, r17
       84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
       86:	0e 94 28 14 	call	0x2850	; 0x2850 <main>
@@ -173,7 +173,7 @@ Disassembly of section .text:
      120:	98 17       	cp	r25, r24
      122:	09 f4       	brne	.+2      	; 0x126 <_fpadd_parts+0x3c>
      124:	28 c1       	rjmp	.+592    	; 0x376 <_fpadd_parts+0x28c>
-     126:	a6 ec       	ldi	r26, 0xC6	; 198
+     126:	a4 ed       	ldi	r26, 0xD4	; 212
      128:	b1 e0       	ldi	r27, 0x01	; 1
      12a:	25 c1       	rjmp	.+586    	; 0x376 <_fpadd_parts+0x28c>
      12c:	84 30       	cpi	r24, 0x04	; 4
@@ -602,7 +602,7 @@ Disassembly of section .text:
      48e:	29 f4       	brne	.+10     	; 0x49a <__mulsf3+0x5c>
      490:	92 30       	cpi	r25, 0x02	; 2
      492:	81 f4       	brne	.+32     	; 0x4b4 <__mulsf3+0x76>
-     494:	86 ec       	ldi	r24, 0xC6	; 198
+     494:	84 ed       	ldi	r24, 0xD4	; 212
      496:	91 e0       	ldi	r25, 0x01	; 1
      498:	c6 c0       	rjmp	.+396    	; 0x626 <__mulsf3+0x1e8>
      49a:	92 30       	cpi	r25, 0x02	; 2
@@ -2611,8 +2611,8 @@ void callback_EXTI0 (void(*ptr_callback)(void)){
 		ptr_globalEXTI[0] = ptr_callback;
     12aa:	89 81       	ldd	r24, Y+1	; 0x01
     12ac:	9a 81       	ldd	r25, Y+2	; 0x02
-    12ae:	90 93 db 01 	sts	0x01DB, r25
-    12b2:	80 93 da 01 	sts	0x01DA, r24
+    12ae:	90 93 e9 01 	sts	0x01E9, r25
+    12b2:	80 93 e8 01 	sts	0x01E8, r24
 	}
     12b6:	0f 90       	pop	r0
     12b8:	0f 90       	pop	r0
@@ -2634,8 +2634,8 @@ void callback_EXTI1 (void(*ptr_callback)(void)){
 		ptr_globalEXTI[1] = ptr_callback;
     12ce:	89 81       	ldd	r24, Y+1	; 0x01
     12d0:	9a 81       	ldd	r25, Y+2	; 0x02
-    12d2:	90 93 dd 01 	sts	0x01DD, r25
-    12d6:	80 93 dc 01 	sts	0x01DC, r24
+    12d2:	90 93 eb 01 	sts	0x01EB, r25
+    12d6:	80 93 ea 01 	sts	0x01EA, r24
 	}
     12da:	0f 90       	pop	r0
     12dc:	0f 90       	pop	r0
@@ -2657,8 +2657,8 @@ void callback_EXTI2 (void(*ptr_callback)(void)){
 		ptr_globalEXTI[2] = ptr_callback;
     12f2:	89 81       	ldd	r24, Y+1	; 0x01
     12f4:	9a 81       	ldd	r25, Y+2	; 0x02
-    12f6:	90 93 df 01 	sts	0x01DF, r25
-    12fa:	80 93 de 01 	sts	0x01DE, r24
+    12f6:	90 93 ed 01 	sts	0x01ED, r25
+    12fa:	80 93 ec 01 	sts	0x01EC, r24
 	}
     12fe:	0f 90       	pop	r0
     1300:	0f 90       	pop	r0
@@ -2695,13 +2695,13 @@ void __vector_1(void){
     132e:	cd b7       	in	r28, 0x3d	; 61
     1330:	de b7       	in	r29, 0x3e	; 62
 	if(ptr_globalEXTI[0] != NULL)
-    1332:	80 91 da 01 	lds	r24, 0x01DA
-    1336:	90 91 db 01 	lds	r25, 0x01DB
+    1332:	80 91 e8 01 	lds	r24, 0x01E8
+    1336:	90 91 e9 01 	lds	r25, 0x01E9
     133a:	00 97       	sbiw	r24, 0x00	; 0
     133c:	29 f0       	breq	.+10     	; 0x1348 <__vector_1+0x40>
 	ptr_globalEXTI[0]();
-    133e:	e0 91 da 01 	lds	r30, 0x01DA
-    1342:	f0 91 db 01 	lds	r31, 0x01DB
+    133e:	e0 91 e8 01 	lds	r30, 0x01E8
+    1342:	f0 91 e9 01 	lds	r31, 0x01E9
     1346:	09 95       	icall
 }
     1348:	cf 91       	pop	r28
@@ -2749,13 +2749,13 @@ void __vector_2(void){
     1394:	cd b7       	in	r28, 0x3d	; 61
     1396:	de b7       	in	r29, 0x3e	; 62
 	if(ptr_globalEXTI[1] != NULL)
-    1398:	80 91 dc 01 	lds	r24, 0x01DC
-    139c:	90 91 dd 01 	lds	r25, 0x01DD
+    1398:	80 91 ea 01 	lds	r24, 0x01EA
+    139c:	90 91 eb 01 	lds	r25, 0x01EB
     13a0:	00 97       	sbiw	r24, 0x00	; 0
     13a2:	29 f0       	breq	.+10     	; 0x13ae <__vector_2+0x40>
 	ptr_globalEXTI[1]();
-    13a4:	e0 91 dc 01 	lds	r30, 0x01DC
-    13a8:	f0 91 dd 01 	lds	r31, 0x01DD
+    13a4:	e0 91 ea 01 	lds	r30, 0x01EA
+    13a8:	f0 91 eb 01 	lds	r31, 0x01EB
     13ac:	09 95       	icall
 }
     13ae:	cf 91       	pop	r28
@@ -2802,13 +2802,13 @@ void __vector_3(void){
     13fa:	cd b7       	in	r28, 0x3d	; 61
     13fc:	de b7       	in	r29, 0x3e	; 62
 	if(ptr_globalEXTI[2] != NULL)
-    13fe:	80 91 de 01 	lds	r24, 0x01DE
-    1402:	90 91 df 01 	lds	r25, 0x01DF
+    13fe:	80 91 ec 01 	lds	r24, 0x01EC
+    1402:	90 91 ed 01 	lds	r25, 0x01ED
     1406:	00 97       	sbiw	r24, 0x00	; 0
     1408:	29 f0       	breq	.+10     	; 0x1414 <__vector_3+0x40>
 	ptr_globalEXTI[2]();
-    140a:	e0 91 de 01 	lds	r30, 0x01DE
-    140e:	f0 91 df 01 	lds	r31, 0x01DF
+    140a:	e0 91 ec 01 	lds	r30, 0x01EC
+    140e:	f0 91 ed 01 	lds	r31, 0x01ED
     1412:	09 95       	icall
 }
     1414:	cf 91       	pop	r28
@@ -4228,8 +4228,8 @@ ES_t ADC_call_back_fun(void(*copy_fun)(void)){
 	ptr_global = copy_fun;
     1c82:	89 81       	ldd	r24, Y+1	; 0x01
     1c84:	9a 81       	ldd	r25, Y+2	; 0x02
-    1c86:	90 93 e1 01 	sts	0x01E1, r25
-    1c8a:	80 93 e0 01 	sts	0x01E0, r24
+    1c86:	90 93 ef 01 	sts	0x01EF, r25
+    1c8a:	80 93 ee 01 	sts	0x01EE, r24
 
 	return ES_OK;
     1c8e:	80 e0       	ldi	r24, 0x00	; 0
@@ -4267,13 +4267,13 @@ void__victor_16(void){
     1cc2:	cd b7       	in	r28, 0x3d	; 61
     1cc4:	de b7       	in	r29, 0x3e	; 62
 	if(ptr_global != NULL)
-    1cc6:	80 91 e0 01 	lds	r24, 0x01E0
-    1cca:	90 91 e1 01 	lds	r25, 0x01E1
+    1cc6:	80 91 ee 01 	lds	r24, 0x01EE
+    1cca:	90 91 ef 01 	lds	r25, 0x01EF
     1cce:	00 97       	sbiw	r24, 0x00	; 0
     1cd0:	29 f0       	breq	.+10     	; 0x1cdc <void__victor_16+0x42>
 	ptr_global();
-    1cd2:	e0 91 e0 01 	lds	r30, 0x01E0
-    1cd6:	f0 91 e1 01 	lds	r31, 0x01E1
+    1cd2:	e0 91 ee 01 	lds	r30, 0x01EE
+    1cd6:	f0 91 ef 01 	lds	r31, 0x01EF
     1cda:	09 95       	icall
 }
     1cdc:	0f 90       	pop	r0
@@ -6135,7 +6135,7 @@ int main(){
     2880:	9f af       	std	Y+63, r25	; 0x3f
     2882:	8e af       	std	Y+62, r24	; 0x3e
     2884:	e8 97       	sbiw	r28, 0x38	; 56
-    2886:	81 ed       	ldi	r24, 0xD1	; 209
+    2886:	8f ed       	ldi	r24, 0xDF	; 223
     2888:	91 e0       	ldi	r25, 0x01	; 1
     288a:	ea 96       	adiw	r28, 0x3a	; 58
     288c:	9f af       	std	Y+63, r25	; 0x3f
@@ -7278,7 +7278,7 @@ _delay_ms(double __ms)
 	_delay_ms(50);
 
 
-	if	   (THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Hold){
+	if	   (THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Hold)
     303a:	fe 01       	movw	r30, r28
     303c:	ec 59       	subi	r30, 0x9C	; 156
     303e:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7324,6 +7324,7 @@ _delay_ms(double __ms)
     308e:	81 32       	cpi	r24, 0x21	; 33
     3090:	92 07       	cpc	r25, r18
     3092:	68 f0       	brcs	.+26     	; 0x30ae <main+0x85e>
+	{
 			LCD_enusend_string("    I  AGREE    ");
     3094:	83 e8       	ldi	r24, 0x83	; 131
     3096:	90 e0       	ldi	r25, 0x00	; 0
@@ -7332,13 +7333,14 @@ _delay_ms(double __ms)
     309c:	82 e0       	ldi	r24, 0x02	; 2
     309e:	61 e0       	ldi	r22, 0x01	; 1
     30a0:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     30a4:	84 e9       	ldi	r24, 0x94	; 148
     30a6:	90 e0       	ldi	r25, 0x00	; 0
     30a8:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     30ac:	2b c3       	rjmp	.+1622   	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold){
+	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold)
     30ae:	fe 01       	movw	r30, r28
     30b0:	ec 59       	subi	r30, 0x9C	; 156
     30b2:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7384,6 +7386,7 @@ _delay_ms(double __ms)
     3102:	81 32       	cpi	r24, 0x21	; 33
     3104:	9f 07       	cpc	r25, r31
     3106:	68 f0       	brcs	.+26     	; 0x3122 <main+0x8d2>
+	{
 			LCD_enusend_string("   QUOTATION    ");
     3108:	85 ea       	ldi	r24, 0xA5	; 165
     310a:	90 e0       	ldi	r25, 0x00	; 0
@@ -7392,13 +7395,14 @@ _delay_ms(double __ms)
     3110:	82 e0       	ldi	r24, 0x02	; 2
     3112:	61 e0       	ldi	r22, 0x01	; 1
     3114:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     3118:	84 e9       	ldi	r24, 0x94	; 148
     311a:	90 e0       	ldi	r25, 0x00	; 0
     311c:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3120:	f1 c2       	rjmp	.+1506   	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open)
     3122:	fe 01       	movw	r30, r28
     3124:	ec 59       	subi	r30, 0x9C	; 156
     3126:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7444,6 +7448,7 @@ _delay_ms(double __ms)
     3176:	80 32       	cpi	r24, 0x20	; 32
     3178:	9e 07       	cpc	r25, r30
     317a:	68 f4       	brcc	.+26     	; 0x3196 <main+0x946>
+	{
 			LCD_enusend_string("   I LOVE YOU   ");
     317c:	86 eb       	ldi	r24, 0xB6	; 182
     317e:	90 e0       	ldi	r25, 0x00	; 0
@@ -7452,13 +7457,14 @@ _delay_ms(double __ms)
     3184:	82 e0       	ldi	r24, 0x02	; 2
     3186:	61 e0       	ldi	r22, 0x01	; 1
     3188:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     318c:	84 e9       	ldi	r24, 0x94	; 148
     318e:	90 e0       	ldi	r25, 0x00	; 0
     3190:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3194:	b7 c2       	rjmp	.+1390   	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Open){
+	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Open)
     3196:	fe 01       	movw	r30, r28
     3198:	ec 59       	subi	r30, 0x9C	; 156
     319a:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7504,6 +7510,7 @@ _delay_ms(double __ms)
     31ea:	80 32       	cpi	r24, 0x20	; 32
     31ec:	92 07       	cpc	r25, r18
     31ee:	68 f4       	brcc	.+26     	; 0x320a <main+0x9ba>
+	{
 			LCD_enusend_string("I'M REALLY LOVE ");
     31f0:	87 ec       	ldi	r24, 0xC7	; 199
     31f2:	90 e0       	ldi	r25, 0x00	; 0
@@ -7512,13 +7519,14 @@ _delay_ms(double __ms)
     31f8:	82 e0       	ldi	r24, 0x02	; 2
     31fa:	61 e0       	ldi	r22, 0x01	; 1
     31fc:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("      YOU       ");}
+			LCD_enusend_string("      YOU       ");
     3200:	88 ed       	ldi	r24, 0xD8	; 216
     3202:	90 e0       	ldi	r25, 0x00	; 0
     3204:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3208:	7d c2       	rjmp	.+1274   	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Hold && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Hold && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open)
     320a:	fe 01       	movw	r30, r28
     320c:	ec 59       	subi	r30, 0x9C	; 156
     320e:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7564,6 +7572,7 @@ _delay_ms(double __ms)
     325e:	80 32       	cpi	r24, 0x20	; 32
     3260:	9f 07       	cpc	r25, r31
     3262:	68 f4       	brcc	.+26     	; 0x327e <main+0xa2e>
+	{
 			LCD_enusend_string("THIS IS TERRIBLE");
     3264:	89 ee       	ldi	r24, 0xE9	; 233
     3266:	90 e0       	ldi	r25, 0x00	; 0
@@ -7572,11 +7581,12 @@ _delay_ms(double __ms)
     326c:	82 e0       	ldi	r24, 0x02	; 2
     326e:	61 e0       	ldi	r22, 0x01	; 1
     3270:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     3274:	84 e9       	ldi	r24, 0x94	; 148
     3276:	90 e0       	ldi	r25, 0x00	; 0
     3278:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     327c:	43 c2       	rjmp	.+1158   	; 0x3704 <main+0xeb4>
+	}
 
 	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Open && LITTLE Open){
     327e:	fe 01       	movw	r30, r28
@@ -7638,7 +7648,7 @@ _delay_ms(double __ms)
     32ec:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     32f0:	09 c2       	rjmp	.+1042   	; 0x3704 <main+0xeb4>
 
-	else if(THUMB Open && INDEX Hold && MIDDLE Hold  && RING Hold && LITTLE Hold){
+	else if(THUMB Open && INDEX Hold && MIDDLE Hold  && RING Hold && LITTLE Hold)
     32f2:	fe 01       	movw	r30, r28
     32f4:	ec 59       	subi	r30, 0x9C	; 156
     32f6:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7684,6 +7694,7 @@ _delay_ms(double __ms)
     3346:	81 32       	cpi	r24, 0x21	; 33
     3348:	92 07       	cpc	r25, r18
     334a:	68 f0       	brcs	.+26     	; 0x3366 <main+0xb16>
+	{
 			LCD_enusend_string("    GOOD JOB    ");
     334c:	8c e1       	ldi	r24, 0x1C	; 28
     334e:	91 e0       	ldi	r25, 0x01	; 1
@@ -7692,14 +7703,14 @@ _delay_ms(double __ms)
     3354:	82 e0       	ldi	r24, 0x02	; 2
     3356:	61 e0       	ldi	r22, 0x01	; 1
     3358:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("             "
-    335c:	84 e9       	ldi	r24, 0x94	; 148
-    335e:	90 e0       	ldi	r25, 0x00	; 0
+			LCD_enusend_string("       		    ");
+    335c:	8d e2       	ldi	r24, 0x2D	; 45
+    335e:	91 e0       	ldi	r25, 0x01	; 1
     3360:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3364:	cf c1       	rjmp	.+926    	; 0x3704 <main+0xeb4>
-					"   ");}
+	}
 
-	else if(THUMB Open && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Open && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open)
     3366:	fe 01       	movw	r30, r28
     3368:	ec 59       	subi	r30, 0x9C	; 156
     336a:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7745,21 +7756,23 @@ _delay_ms(double __ms)
     33ba:	80 32       	cpi	r24, 0x20	; 32
     33bc:	9f 07       	cpc	r25, r31
     33be:	68 f4       	brcc	.+26     	; 0x33da <main+0xb8a>
+	{
 			LCD_enusend_string("  I'M NOT SURE  ");
-    33c0:	8d e2       	ldi	r24, 0x2D	; 45
+    33c0:	8b e3       	ldi	r24, 0x3B	; 59
     33c2:	91 e0       	ldi	r25, 0x01	; 1
     33c4:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     33c8:	82 e0       	ldi	r24, 0x02	; 2
     33ca:	61 e0       	ldi	r22, 0x01	; 1
     33cc:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     33d0:	84 e9       	ldi	r24, 0x94	; 148
     33d2:	90 e0       	ldi	r25, 0x00	; 0
     33d4:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     33d8:	95 c1       	rjmp	.+810    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Hold && MIDDLE Open && RING Open && LITTLE Open){
+	else if(THUMB Open && INDEX Hold && MIDDLE Open && RING Open && LITTLE Open)
     33da:	fe 01       	movw	r30, r28
     33dc:	ec 59       	subi	r30, 0x9C	; 156
     33de:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7805,21 +7818,23 @@ _delay_ms(double __ms)
     342e:	80 32       	cpi	r24, 0x20	; 32
     3430:	9e 07       	cpc	r25, r30
     3432:	68 f4       	brcc	.+26     	; 0x344e <main+0xbfe>
+	{
 			LCD_enusend_string("    EXCELLENT   ");
-    3434:	8e e3       	ldi	r24, 0x3E	; 62
+    3434:	8c e4       	ldi	r24, 0x4C	; 76
     3436:	91 e0       	ldi	r25, 0x01	; 1
     3438:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     343c:	82 e0       	ldi	r24, 0x02	; 2
     343e:	61 e0       	ldi	r22, 0x01	; 1
     3440:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     3444:	84 e9       	ldi	r24, 0x94	; 148
     3446:	90 e0       	ldi	r25, 0x00	; 0
     3448:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     344c:	5b c1       	rjmp	.+694    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open)
     344e:	fe 01       	movw	r30, r28
     3450:	ec 59       	subi	r30, 0x9C	; 156
     3452:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7865,21 +7880,23 @@ _delay_ms(double __ms)
     34a2:	80 32       	cpi	r24, 0x20	; 32
     34a4:	92 07       	cpc	r25, r18
     34a6:	68 f4       	brcc	.+26     	; 0x34c2 <main+0xc72>
+	{
 			LCD_enusend_string("       ME       ");
-    34a8:	8f e4       	ldi	r24, 0x4F	; 79
+    34a8:	8d e5       	ldi	r24, 0x5D	; 93
     34aa:	91 e0       	ldi	r25, 0x01	; 1
     34ac:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     34b0:	82 e0       	ldi	r24, 0x02	; 2
     34b2:	61 e0       	ldi	r22, 0x01	; 1
     34b4:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     34b8:	84 e9       	ldi	r24, 0x94	; 148
     34ba:	90 e0       	ldi	r25, 0x00	; 0
     34bc:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     34c0:	21 c1       	rjmp	.+578    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Hold){
+	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Hold)
     34c2:	fe 01       	movw	r30, r28
     34c4:	ec 59       	subi	r30, 0x9C	; 156
     34c6:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7925,21 +7942,23 @@ _delay_ms(double __ms)
     3516:	81 32       	cpi	r24, 0x21	; 33
     3518:	9f 07       	cpc	r25, r31
     351a:	68 f0       	brcs	.+26     	; 0x3536 <main+0xce6>
+	{
 			LCD_enusend_string(" SEE YOU LATER  ");
-    351c:	80 e6       	ldi	r24, 0x60	; 96
+    351c:	8e e6       	ldi	r24, 0x6E	; 110
     351e:	91 e0       	ldi	r25, 0x01	; 1
     3520:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     3524:	82 e0       	ldi	r24, 0x02	; 2
     3526:	61 e0       	ldi	r22, 0x01	; 1
     3528:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     352c:	84 e9       	ldi	r24, 0x94	; 148
     352e:	90 e0       	ldi	r25, 0x00	; 0
     3530:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3534:	e7 c0       	rjmp	.+462    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Open && LITTLE Open){
+	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Open && LITTLE Open)
     3536:	fe 01       	movw	r30, r28
     3538:	ec 59       	subi	r30, 0x9C	; 156
     353a:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -7985,21 +8004,23 @@ _delay_ms(double __ms)
     358a:	80 32       	cpi	r24, 0x20	; 32
     358c:	9e 07       	cpc	r25, r30
     358e:	68 f4       	brcc	.+26     	; 0x35aa <main+0xd5a>
+	{
 			LCD_enusend_string("   THANK  YOU   ");
-    3590:	81 e7       	ldi	r24, 0x71	; 113
+    3590:	8f e7       	ldi	r24, 0x7F	; 127
     3592:	91 e0       	ldi	r25, 0x01	; 1
     3594:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     3598:	82 e0       	ldi	r24, 0x02	; 2
     359a:	61 e0       	ldi	r22, 0x01	; 1
     359c:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     35a0:	84 e9       	ldi	r24, 0x94	; 148
     35a2:	90 e0       	ldi	r25, 0x00	; 0
     35a4:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     35a8:	ad c0       	rjmp	.+346    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold){
+	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold)
     35aa:	fe 01       	movw	r30, r28
     35ac:	ec 59       	subi	r30, 0x9C	; 156
     35ae:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -8045,21 +8066,23 @@ _delay_ms(double __ms)
     35fe:	81 32       	cpi	r24, 0x21	; 33
     3600:	92 07       	cpc	r25, r18
     3602:	68 f0       	brcs	.+26     	; 0x361e <main+0xdce>
+	{
 			LCD_enusend_string("    VICTORY     ");
-    3604:	82 e8       	ldi	r24, 0x82	; 130
+    3604:	80 e9       	ldi	r24, 0x90	; 144
     3606:	91 e0       	ldi	r25, 0x01	; 1
     3608:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     360c:	82 e0       	ldi	r24, 0x02	; 2
     360e:	61 e0       	ldi	r22, 0x01	; 1
     3610:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     3614:	84 e9       	ldi	r24, 0x94	; 148
     3616:	90 e0       	ldi	r25, 0x00	; 0
     3618:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     361c:	73 c0       	rjmp	.+230    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Open && LITTLE Hold){
+	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Open && LITTLE Hold)
     361e:	fe 01       	movw	r30, r28
     3620:	ec 59       	subi	r30, 0x9C	; 156
     3622:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -8105,21 +8128,23 @@ _delay_ms(double __ms)
     3672:	81 32       	cpi	r24, 0x21	; 33
     3674:	9f 07       	cpc	r25, r31
     3676:	68 f0       	brcs	.+26     	; 0x3692 <main+0xe42>
+	{
 			LCD_enusend_string("   LETTER (W)   ");
-    3678:	83 e9       	ldi	r24, 0x93	; 147
+    3678:	81 ea       	ldi	r24, 0xA1	; 161
     367a:	91 e0       	ldi	r25, 0x01	; 1
     367c:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     3680:	82 e0       	ldi	r24, 0x02	; 2
     3682:	61 e0       	ldi	r22, 0x01	; 1
     3684:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
     3688:	84 e9       	ldi	r24, 0x94	; 148
     368a:	90 e0       	ldi	r25, 0x00	; 0
     368c:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3690:	39 c0       	rjmp	.+114    	; 0x3704 <main+0xeb4>
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Open && LITTLE Open){
+	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Open && LITTLE Open)
     3692:	fe 01       	movw	r30, r28
     3694:	ec 59       	subi	r30, 0x9C	; 156
     3696:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -8165,16 +8190,17 @@ _delay_ms(double __ms)
     36e6:	80 32       	cpi	r24, 0x20	; 32
     36e8:	9e 07       	cpc	r25, r30
     36ea:	60 f4       	brcc	.+24     	; 0x3704 <main+0xeb4>
+	{
 			LCD_enusend_string("  NUMBER EIGHT  ");
-    36ec:	84 ea       	ldi	r24, 0xA4	; 164
+    36ec:	82 eb       	ldi	r24, 0xB2	; 178
     36ee:	91 e0       	ldi	r25, 0x01	; 1
     36f0:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
 			LCD_enuGoToPosition(2,1);
     36f4:	82 e0       	ldi	r24, 0x02	; 2
     36f6:	61 e0       	ldi	r22, 0x01	; 1
     36f8:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>
-			LCD_enusend_string("       (8)      ");}
-    36fc:	85 eb       	ldi	r24, 0xB5	; 181
+			LCD_enusend_string("       (8)      ");
+    36fc:	83 ec       	ldi	r24, 0xC3	; 195
     36fe:	91 e0       	ldi	r25, 0x01	; 1
     3700:	0e 94 26 13 	call	0x264c	; 0x264c <LCD_enusend_string>
     3704:	80 e0       	ldi	r24, 0x00	; 0
@@ -8314,10 +8340,10 @@ _delay_ms(double __ms)
     37e2:	f1 f7       	brne	.-4      	; 0x37e0 <main+0xf90>
     37e4:	9a 83       	std	Y+2, r25	; 0x02
     37e6:	89 83       	std	Y+1, r24	; 0x01
+	}
 
-
-			_delay_ms(500);
-			LCD_enuGoToPosition(1,1);
+		_delay_ms(500);
+		LCD_enuGoToPosition(1,1);
     37e8:	81 e0       	ldi	r24, 0x01	; 1
     37ea:	61 e0       	ldi	r22, 0x01	; 1
     37ec:	0e 94 49 13 	call	0x2692	; 0x2692 <LCD_enuGoToPosition>

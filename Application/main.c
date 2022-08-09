@@ -65,85 +65,111 @@ int main(){
 	_delay_ms(50);
 
 
-	if	   (THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Hold){
+	if	   (THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Hold)
+	{
 			LCD_enusend_string("    I  AGREE    ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold){
+	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold)
+	{
 			LCD_enusend_string("   QUOTATION    ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open)
+	{
 			LCD_enusend_string("   I LOVE YOU   ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Open){
+	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Open)
+	{
 			LCD_enusend_string("I'M REALLY LOVE ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("      YOU       ");}
+			LCD_enusend_string("      YOU       ");
+	}
 
-	else if(THUMB Hold && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Hold && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Open)
+	{
 			LCD_enusend_string("THIS IS TERRIBLE");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
 	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Open && LITTLE Open){
 			LCD_enusend_string("   I WISH YOU   ");
 			LCD_enuGoToPosition(2,1);
 			LCD_enusend_string("  A HAPPY LIFE  ");}
 
-	else if(THUMB Open && INDEX Hold && MIDDLE Hold  && RING Hold && LITTLE Hold){
+	else if(THUMB Open && INDEX Hold && MIDDLE Hold  && RING Hold && LITTLE Hold)
+	{
 			LCD_enusend_string("    GOOD JOB    ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("             "
-					"   ");}
+			LCD_enusend_string("       		    ");
+	}
 
-	else if(THUMB Open && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Open && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open)
+	{
 			LCD_enusend_string("  I'M NOT SURE  ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Hold && MIDDLE Open && RING Open && LITTLE Open){
+	else if(THUMB Open && INDEX Hold && MIDDLE Open && RING Open && LITTLE Open)
+	{
 			LCD_enusend_string("    EXCELLENT   ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open){
+	else if(THUMB Hold && INDEX Hold && MIDDLE Hold && RING Hold && LITTLE Open)
+	{
 			LCD_enusend_string("       ME       ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Hold){
+	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Hold && LITTLE Hold)
+	{
 			LCD_enusend_string(" SEE YOU LATER  ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Open && LITTLE Open){
+	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Open && LITTLE Open)
+	{
 			LCD_enusend_string("   THANK  YOU   ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold){
+	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Hold && LITTLE Hold)
+	{
 			LCD_enusend_string("    VICTORY     ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Open && LITTLE Hold){
+	else if(THUMB Open && INDEX Open && MIDDLE Open && RING Open && LITTLE Hold)
+	{
 			LCD_enusend_string("   LETTER (W)   ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("                ");}
+			LCD_enusend_string("                ");
+	}
 
-	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Open && LITTLE Open){
+	else if(THUMB Open && INDEX Open && MIDDLE Hold && RING Open && LITTLE Open)
+	{
 			LCD_enusend_string("  NUMBER EIGHT  ");
 			LCD_enuGoToPosition(2,1);
-			LCD_enusend_string("       (8)      ");}
+			LCD_enusend_string("       (8)      ");
+	}
 
-
-			_delay_ms(500);
-			LCD_enuGoToPosition(1,1);
-  }
+		_delay_ms(500);
+		LCD_enuGoToPosition(1,1);
+    }
 }
 

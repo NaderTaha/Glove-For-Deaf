@@ -407,7 +407,7 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
  *(.fini0)
                 0x000038b2                _etext = .
 
-.data           0x00800060      0x17a load address 0x000038b2
+.data           0x00800060      0x188 load address 0x000038b2
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -417,84 +417,84 @@ LOAD c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gc
  .data          0x00800060        0x0 ./MCAL/DIO/DIO_prog.o
  .data          0x00800060        0x0 ./MCAL/ADC/ACD_prog.o
  .data          0x00800060        0x0 ./HAL/LCD/LCD_source.o
- .data          0x00800060      0x166 ./Application/main.o
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .data          0x008001c6        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .data          0x008001c6        0x8 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
-                0x008001c6                __thenan_sf
- .data          0x008001ce        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .data          0x008001ce        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .data          0x008001ce        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .data          0x008001ce        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .data          0x008001ce        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x00800060      0x174 ./Application/main.o
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x008001d4        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x008001d4        0x8 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x008001d4                __thenan_sf
+ .data          0x008001dc        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x008001dc        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x008001dc        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x008001dc        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x008001dc        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
  *(.data*)
- .data.intr     0x008001ce        0x3 ./MCAL/EXTI/EXTI_config.o
-                0x008001ce                intr
+ .data.intr     0x008001dc        0x3 ./MCAL/EXTI/EXTI_config.o
+                0x008001dc                intr
  *(.rodata)
  *(.rodata*)
  .rodata.C.0.1352
-                0x008001d1        0x8 ./Application/main.o
+                0x008001df        0x8 ./Application/main.o
  *(.gnu.linkonce.d*)
-                0x008001da                . = ALIGN (0x2)
- *fill*         0x008001d9        0x1 00
-                0x008001da                _edata = .
-                0x008001da                PROVIDE (__data_end, .)
+                0x008001e8                . = ALIGN (0x2)
+ *fill*         0x008001e7        0x1 00
+                0x008001e8                _edata = .
+                0x008001e8                PROVIDE (__data_end, .)
 
-.bss            0x008001da        0x8
-                0x008001da                PROVIDE (__bss_start, .)
+.bss            0x008001e8        0x8
+                0x008001e8                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .bss           0x008001da        0x0 ./MCAL/GIE/GIE_Prog.o
- .bss           0x008001da        0x0 ./MCAL/EXTI/EXTI_config.o
- .bss           0x008001da        0x0 ./MCAL/EXTI/EXTI_program.o
- .bss           0x008001da        0x0 ./MCAL/DIO/DIO_prog.o
- .bss           0x008001da        0x0 ./MCAL/ADC/ACD_prog.o
- .bss           0x008001da        0x0 ./HAL/LCD/LCD_source.o
- .bss           0x008001da        0x0 ./Application/main.o
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x008001da        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008001e8        0x0 ./MCAL/GIE/GIE_Prog.o
+ .bss           0x008001e8        0x0 ./MCAL/EXTI/EXTI_config.o
+ .bss           0x008001e8        0x0 ./MCAL/EXTI/EXTI_program.o
+ .bss           0x008001e8        0x0 ./MCAL/DIO/DIO_prog.o
+ .bss           0x008001e8        0x0 ./MCAL/ADC/ACD_prog.o
+ .bss           0x008001e8        0x0 ./HAL/LCD/LCD_source.o
+ .bss           0x008001e8        0x0 ./Application/main.o
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x008001e8        0x0 c:/users/nader/desktop/imbeedded/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
  *(.bss*)
  .bss.ptr_globalEXTI
-                0x008001da        0x6 ./MCAL/EXTI/EXTI_program.o
+                0x008001e8        0x6 ./MCAL/EXTI/EXTI_program.o
  .bss.ptr_global
-                0x008001e0        0x2 ./MCAL/ADC/ACD_prog.o
+                0x008001ee        0x2 ./MCAL/ADC/ACD_prog.o
  *(COMMON)
-                0x008001e2                PROVIDE (__bss_end, .)
+                0x008001f0                PROVIDE (__bss_end, .)
                 0x000038b2                __data_load_start = LOADADDR (.data)
-                0x00003a2c                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00003a3a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008001e2        0x0
-                0x008001e2                PROVIDE (__noinit_start, .)
+.noinit         0x008001f0        0x0
+                0x008001f0                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008001e2                PROVIDE (__noinit_end, .)
-                0x008001e2                _end = .
-                0x008001e2                PROVIDE (__heap_start, .)
+                0x008001f0                PROVIDE (__noinit_end, .)
+                0x008001f0                _end = .
+                0x008001f0                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
