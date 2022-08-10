@@ -27,6 +27,7 @@
 
 int main(){
 
+	u8 i;
 	ADC_INIT();
 	LCD_INIT();
 	LCD_enusend_cmd(0x0c);
@@ -34,17 +35,31 @@ int main(){
 	u16  THUMB,INDEX,MIDDLE,RING,LITTLE;
 
 	char smile[]={ 0x00,0x00,0x0a,0x0a,0x00,0x11,0x0e,0x00};
-	LCD_enusend_string("   HELLO, SIR   ");
+
+	LCD_enuGoToPosition(1,1);
+	LCD_enusend_string("                  HELLO, SIR   ");
 	LCD_enusend_cmd(0x40);
-	for(u8 i=0;i<8;i++)
+
+	for(i=0;i<8;i++)
 		LCD_enusend_data(smile[i]);
-	LCD_enuGoToPosition(1,15);
+	LCD_enuGoToPosition(1,31);
 	LCD_enusend_data(0);
 	LCD_enusend_cmd(0x80);
 	LCD_enuGoToPosition(2,1);
-	LCD_enusend_string(" START YOUR SIGN ");
-	_delay_ms(5000);
+	LCD_enusend_string("                START YOUR SIGN");
+	for(i=0;i<15;i++){
+		LCD_enusend_cmd(0x18);
+			_delay_ms(200);
+		}
+
+	_delay_ms(2500);
+	for(i=0;i<15;i++){
+			LCD_enusend_cmd(0x18);
+			_delay_ms(200);
+	}
+
 	LCD_enusend_cmd(0x01);
+	_delay_ms(2000);
 
 	while(1){
 
@@ -142,7 +157,7 @@ int main(){
 
 	else if(THUMB Hold && INDEX Open && MIDDLE Open && RING Open && LITTLE Open)
 	{
-			LCD_enusend_string("   THANK  YOU   ");
+			LCD_enusend_string("   THANK  YOU   5");
 			LCD_enuGoToPosition(2,1);
 			LCD_enusend_string("                ");
 	}
